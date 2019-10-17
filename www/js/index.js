@@ -72,6 +72,7 @@ var app = {
 		
 		var value = window.localStorage.getItem(key);
 		
-		$("#myText").text(value);
+		document.getElementById("myText").innerHTML = value;
+		//$("#myText").text(value);
     }
 };
