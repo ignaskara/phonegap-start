@@ -165,21 +165,21 @@ function updateDisplay() {
 		
 		var marsBarInfo= {
 			"Calories" : "230g",
-			"Total fat" {
+			"Total fat" : {
 				"Total fat" : "8.6g",
 				"Saturated fat" : "4.2g",
 				"Trans fat" : "0g"
-			}
+			},
 			"Cholesterol" : "0mg",
 			"Sodium": "0mg",
 			"Potassium" : "0mg",
-			"Total Carbohydrate" {
+			"Total Carbohydrate" : {
 				"Total Carbohydrate" : "35.3g",
 				"Dietary Fiber" : "0g",
-				"Sugars" "30.5g"
-			}
+				"Sugars" : "30.5g"
+			},
 			"Protein": "2.2g",
-			"Vitamins" {
+			"Vitamins" : {
 				"Vitamin A" : "0%",
 				"Calcium" : "0%",
 				"Vitamin C" : "0%",
