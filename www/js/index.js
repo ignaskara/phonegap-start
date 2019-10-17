@@ -77,7 +77,7 @@ function updateDisplay() {
 			"Total Carbohydrate" : {
 				"Total Carbohydrate" : "35.3g",
 				"Dietary Fiber" : "0g",
-				"Sugars" "30.5g"
+				"Sugars" : "30.5g"
 			},
 			"Protein": "2.2g",
 			"Vitamins" : {
