@@ -23,24 +23,6 @@ function updateDisplay() {
 	updateDisplay();
 	    
 	alert("device ready");
-    }
-
-
-    function onPause() {
-	
-	paused_count++;
-	updateDisplay();
-	    
-	alert("pause");
-    }
-	
-
-    function onResume() {
-		
-	resumed_count++;
-	updateDisplay();
-	    
-	alert("resume");
 	var key = "pen";
 		var value = "blue colour";
 				
@@ -70,4 +52,73 @@ function updateDisplay() {
 		
 		//document.getElementById("myText").innerHTML = value;
 		$("#myText").text(value);
+		$("#lenght").text(value);
+		$("#myMarsBar").text(value);
+		
+		
+		
+		
+		/**  part for JSON  **/
+		
+		
+		
+		// STORING nutritional information of a mars choco bar.
+		
+		var marsBarInfo= {
+			"Calories" : "230g",
+			"Total fat" {
+				"Total fat" : "8.6g",
+				"Saturated fat" : "4.2g",
+				"Trans fat" : "0g"
+			}
+			"Cholesterol" : "0mg",
+			"Sodium": "0mg",
+			"Potassium" : "0mg",
+			"Total Carbohydrate" {
+				"Total Carbohydrate" : "35.3g",
+				"Dietary Fiber" : "0g",
+				"Sugars" "30.5g"
+			}
+			"Protein": "2.2g",
+			"Vitamins" {
+				"Vitamin A" : "0%",
+				"Calcium" : "0%",
+				"Vitamin C" : "0%",
+				"Iron" : "0%"
+			}
+			
+		}
+		
+		//MAKE mars into a string. haha
+		var chocoBarAsAString = JSON.stringify(marsBarInfo);
+		
+		//STORE it into local storage
+		window.localStorage.setItem("adress", chocoBarAsAString);
+		
+		//ACCESS mars as a string
+		var getMars = window.localStorage.getItem("adress");
+		
+		//UNSTRING mars bar
+		var barJSON =JSON.parse(getMars);
+		
+		
+		/** The end of JSON **/
+    }
+
+
+    function onPause() {
+	
+	paused_count++;
+	updateDisplay();
+	    
+	alert("pause");
+    }
+	
+
+    function onResume() {
+		
+	resumed_count++;
+	updateDisplay();
+	    
+	alert("resume");
     }
