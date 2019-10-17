@@ -45,5 +45,33 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+		var key = "pen";
+		var value = "blue colour";
+				
+		window.localStorage.setItem(key, value);
+		
+		var key = "headset";
+		var value = "Green";
+				
+		window.localStorage.setItem(key, value);
+		
+		var key = "mouse";
+		var value = "small";
+				
+		window.localStorage.setItem(key, value);
+		
+		var key = "window";
+		var value = "clear";
+				
+		window.localStorage.setItem(key, value);
+		
+		var key = "carpet";
+		var value = "old";
+				
+		window.localStorage.setItem(key, value);
+		
+		var value = window.localStorage.getItem(key);
+		
+		$("#myText").text(value);
     }
 };
